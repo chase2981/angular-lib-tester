@@ -8,6 +8,9 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "paths": {
+      "angular-lib": ["./angular-lib/index.ts"]
+    },
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -15,5 +18,13 @@
       "es2017",
       "dom"
     ]
-  }
+  },
+  "files": [
+    "./angular-lib/index.ts",
+    "./src/main.ts",
+    "./src/polyfills.ts"
+  ],
+  "include": [
+    "./src/typings.d.ts"
+  ]
 }

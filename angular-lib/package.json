@@ -1,0 +1,29 @@
+{
+  "name": "angular-lib",
+  "version": "0.0.0",
+  "description": "compiles templates when provided a path to a template file by first http.get()ing the template and then compiling it with the provided view model",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "angular",
+    "angular4",
+    "angular5",
+    "compiler",
+    "template"
+  ],
+  "author": "turbonemesis <cwgibb@aggiemail.usu.edu> (http://turbonemesis.com)",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "5.0.x",
+    "@angular/compiler": "5.0.x",
+    "@angular/compiler-cli": "5.0.x",
+    "@angular/core": "5.0.x",
+    "@angular/forms": "5.0.x",
+    "@angular/http": "5.0.x",
+    "rxjs": "5.5.x",
+    "typescript": "2.x",
+    "zone.js": "^0.8.4"
+  }
+}
