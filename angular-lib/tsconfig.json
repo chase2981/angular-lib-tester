@@ -20,7 +20,10 @@
     ]
   },
   "files": [
-    "./src/public_api.ts"
+    "./build/public_api.ts"
+  ],
+  "include": [
+    "./build/typings.d.ts"
   ],
   "exclude": [
     "node_modules/**",

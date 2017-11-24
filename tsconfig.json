@@ -8,9 +8,9 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "paths": {
+    /*"paths": {
       "angular-lib": ["./angular-lib/index.ts"]
-    },
+    },*/
     "typeRoots": [
       "node_modules/@types"
     ],

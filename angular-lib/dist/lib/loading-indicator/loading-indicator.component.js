@@ -31,8 +31,8 @@ var LoadingIndicatorComponent = (function () {
     LoadingIndicatorComponent.decorators = [
         { type: core_1.Component, args: [{
                     selector: 'rd-loading-indicator',
-                    templateUrl: './loading-indicator.component.html',
-                    styleUrls: ['./loading-indicator.component.less']
+                    template: "\n    <img src=\"https://www.rentdynamics.com/images/greendivider.png\" [height]=\"height\" [width]=\"width\" style=\"margin: auto !important; width: 100%;\" />\n  ",
+                    styles: ["\n\n  "]
                 },] },
     ];
     /** @nocollapse */
