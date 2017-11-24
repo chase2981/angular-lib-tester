@@ -31,7 +31,7 @@ var LoadingIndicatorComponent = (function () {
     LoadingIndicatorComponent.decorators = [
         { type: core_1.Component, args: [{
                     selector: 'rd-loading-indicator',
-                    template: "\n    <img src=\"https://www.rentdynamics.com/images/greendivider.png\" [height]=\"height\" [width]=\"width\" style=\"margin: auto !important; width: 100%;\" />\n  ",
+                    template: "\n    <img src=\"https://assets.listia.com/photos/906aea0f142d9ba040d5/original.jpg?s=320x320m&sig=7ccd9e662afed4e3&ts=1376259719\" [height]=\"height\" [width]=\"width\" style=\"margin: auto !important; width: 100%;\" />\n  ",
                     styles: ["\n\n  "]
                 },] },
     ];
