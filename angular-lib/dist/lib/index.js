@@ -10,4 +10,7 @@ exports.CompilerComponent = index_1.CompilerComponent;
 var index_2 = require("./loading-indicator/index");
 exports.LoadingIndicatorComponent = index_2.LoadingIndicatorComponent;
 exports.LoadingIndicatorModule = index_2.LoadingIndicatorModule;
+var index_3 = require("./text-editor/index");
+exports.TextEditorDirective = index_3.TextEditorDirective;
+exports.TextEditorModule = index_3.TextEditorModule;
 //# sourceMappingURL=index.js.map

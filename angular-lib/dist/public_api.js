@@ -9,4 +9,6 @@ exports.CompilerModule = index_1.CompilerModule;
 exports.CompilerComponent = index_1.CompilerComponent;
 exports.LoadingIndicatorComponent = index_1.LoadingIndicatorComponent;
 exports.LoadingIndicatorModule = index_1.LoadingIndicatorModule;
+exports.TextEditorDirective = index_1.TextEditorDirective;
+exports.TextEditorModule = index_1.TextEditorModule;
 //# sourceMappingURL=public_api.js.map

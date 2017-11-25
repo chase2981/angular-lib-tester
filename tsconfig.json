@@ -7,10 +7,16 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "skipLibCheck": true,
     "target": "es5",
-    /*"paths": {
+    /*
+    "paths": {
       "angular-lib": ["./angular-lib/index.ts"]
-    },*/
+    },
+    */
+    "types": [
+      "ckeditor"
+    ],
     "typeRoots": [
       "node_modules/@types"
     ],

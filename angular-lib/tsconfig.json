@@ -9,7 +9,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "skipLibCheck": true,
+    "skipLibCheck": false,
+    "types": [
+      "ckeditor"
+    ],
     "typeRoots": [
       "node_modules/@types"
     ],

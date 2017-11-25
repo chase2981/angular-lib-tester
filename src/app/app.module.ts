@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { LoadingIndicatorModule, CompilerModule } from 'angular-lib';
+import { LoadingIndicatorModule, CompilerModule, TextEditorModule } from 'angular-lib';
 
 import { AppComponent } from './app.component';
 
@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     CompilerModule,
     LoadingIndicatorModule,
+    TextEditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
