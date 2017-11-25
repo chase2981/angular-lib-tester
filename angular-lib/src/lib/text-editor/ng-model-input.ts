@@ -6,7 +6,7 @@ export const noop = () => { };
 export class NgModelInputValueAccessor {
     provide = NG_VALUE_ACCESSOR;
     useExisting = forwardRef(() => this.component);
-    multi = true;
+    multi = false;
     constructor(public component: any) {
 
     }

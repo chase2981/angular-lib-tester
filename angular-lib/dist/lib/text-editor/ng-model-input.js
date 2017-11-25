@@ -13,7 +13,7 @@ var NgModelInputValueAccessor = (function () {
         this.component = component;
         this.provide = forms_1.NG_VALUE_ACCESSOR;
         this.useExisting = core_1.forwardRef(function () { return _this.component; });
-        this.multi = true;
+        this.multi = false;
     }
     return NgModelInputValueAccessor;
 }());

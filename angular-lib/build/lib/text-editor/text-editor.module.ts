@@ -6,13 +6,18 @@ import { TextEditorDirective } from './text-editor.directive';
 
 @NgModule({
   imports: [
+    FormsModule,
     CommonModule,
   ],
   declarations: [
     TextEditorDirective,
   ],
   exports: [
+    FormsModule,
     TextEditorDirective,
+  ],
+  providers: [
+
   ]
 })
 export class TextEditorModule { }

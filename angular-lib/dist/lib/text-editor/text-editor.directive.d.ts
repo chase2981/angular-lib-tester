@@ -1,16 +1,14 @@
 /// <reference types="ckeditor" />
-import { AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, OnInit, OnDestroy } from '@angular/core';
-import { NgModelInput } from './ng-model-input';
+import { EventEmitter, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import 'ckeditor';
-export declare class TextEditorDirective extends NgModelInput implements OnInit, AfterViewInit, OnDestroy {
-    private changeDetectorRef;
+export declare class TextEditorDirective implements OnInit, AfterViewInit, OnDestroy {
     ngModel: string;
+    elem: any;
     options: {};
     change: EventEmitter<string>;
     inline: boolean;
     editor: CKEDITOR.editor;
-    elem: HTMLTextAreaElement;
-    constructor(changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef);
+    constructor();
     ngOnInit(): void;
     ngAfterViewInit(): void;
     initInlineEditor(): CKEDITOR.editor;

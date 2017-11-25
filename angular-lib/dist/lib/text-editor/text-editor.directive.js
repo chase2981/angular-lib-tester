@@ -1,34 +1,20 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 /**
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var ng_model_input_1 = require("./ng-model-input");
 require("ckeditor");
-var TextEditorDirective = (function (_super) {
-    __extends(TextEditorDirective, _super);
+var TextEditorDirective = (function () {
+    // elem: HTMLTextAreaElement;
     /* todo: wire up onNgModelTouched() */
-    function TextEditorDirective(changeDetectorRef, elementRef) {
-        var _this = _super.call(this) || this;
-        _this.changeDetectorRef = changeDetectorRef;
-        _this.ngModel = null;
-        _this.options = {};
-        _this.change = new core_1.EventEmitter();
-        _this.inline = false;
-        _this.elem = elementRef.nativeElement;
-        return _this;
+    function TextEditorDirective() {
+        // super();
+        this.ngModel = null;
+        this.options = {};
+        this.change = new core_1.EventEmitter();
+        this.inline = false;
     }
     /**
      * @return {?}
@@ -37,6 +23,7 @@ var TextEditorDirective = (function (_super) {
      * @return {?}
      */
     function () {
+        // this.elem = this.elementRef.nativeElement;
         CKEDITOR.disableAutoInline = true;
     };
     /**
@@ -79,9 +66,9 @@ var TextEditorDirective = (function (_super) {
         var _this = this;
         this.editor.on('change', function () {
             var /** @type {?} */ newVal = _this.editor.getData();
-            _this.onNgModelChanged(newVal);
+            // this.onNgModelChanged(newVal);
+            // this.onNgModelChanged(newVal);
             _this.change.emit(newVal);
-            //this.changeDetectorRef.markForCheck();
         });
     };
     /* Override writeValue() of NgModelInput class */
@@ -94,7 +81,7 @@ var TextEditorDirective = (function (_super) {
      * @return {?}
      */
     function (newVal) {
-        _super.prototype.writeValue.call(this, newVal);
+        // super.writeValue(newVal);
         if (this.editor)
             this.editor.setData(newVal);
     };
@@ -112,23 +99,20 @@ var TextEditorDirective = (function (_super) {
     };
     TextEditorDirective.decorators = [
         { type: core_1.Directive, args: [{
-                    selector: 'rd-text-editor, [rd-text-editor]',
-                    providers: [new ng_model_input_1.NgModelInputValueAccessor(TextEditorDirective)]
+                    selector: '[rdTextEditor]'
+                    // providers: [new NgModelInputValueAccessor(TextEditorDirective)]
                 },] },
     ];
     /** @nocollapse */
-    TextEditorDirective.ctorParameters = function () { return [
-        { type: core_1.ChangeDetectorRef, },
-        { type: core_1.ElementRef, },
-    ]; };
+    TextEditorDirective.ctorParameters = function () { return []; };
     TextEditorDirective.propDecorators = {
-        "ngModel": [{ type: core_1.Input },],
+        "elem": [{ type: core_1.Input },],
         "options": [{ type: core_1.Input },],
         "change": [{ type: core_1.Output },],
         "inline": [{ type: core_1.HostBinding, args: ['contentEditable',] }, { type: core_1.Input },],
     };
     return TextEditorDirective;
-}(ng_model_input_1.NgModelInput));
+}());
 exports.TextEditorDirective = TextEditorDirective;
 function TextEditorDirective_tsickle_Closure_declarations() {
     /** @type {!Array<{type: !Function, args: (undefined|!Array<?>)}>} */
@@ -143,6 +127,8 @@ function TextEditorDirective_tsickle_Closure_declarations() {
     /** @type {?} */
     TextEditorDirective.prototype.ngModel;
     /** @type {?} */
+    TextEditorDirective.prototype.elem;
+    /** @type {?} */
     TextEditorDirective.prototype.options;
     /** @type {?} */
     TextEditorDirective.prototype.change;
@@ -150,9 +136,5 @@ function TextEditorDirective_tsickle_Closure_declarations() {
     TextEditorDirective.prototype.inline;
     /** @type {?} */
     TextEditorDirective.prototype.editor;
-    /** @type {?} */
-    TextEditorDirective.prototype.elem;
-    /** @type {?} */
-    TextEditorDirective.prototype.changeDetectorRef;
 }
 //# sourceMappingURL=text-editor.directive.js.map

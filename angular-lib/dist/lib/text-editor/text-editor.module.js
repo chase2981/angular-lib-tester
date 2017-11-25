@@ -6,6 +6,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
+var forms_1 = require("@angular/forms");
 var text_editor_directive_1 = require("./text-editor.directive");
 var TextEditorModule = (function () {
     function TextEditorModule() {
@@ -13,14 +14,17 @@ var TextEditorModule = (function () {
     TextEditorModule.decorators = [
         { type: core_1.NgModule, args: [{
                     imports: [
+                        forms_1.FormsModule,
                         common_1.CommonModule,
                     ],
                     declarations: [
                         text_editor_directive_1.TextEditorDirective,
                     ],
                     exports: [
+                        forms_1.FormsModule,
                         text_editor_directive_1.TextEditorDirective,
-                    ]
+                    ],
+                    providers: []
                 },] },
     ];
     /** @nocollapse */
