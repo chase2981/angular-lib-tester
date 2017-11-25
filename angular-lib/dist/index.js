@@ -12,4 +12,6 @@ exports.CompilerModule = public_api_1.CompilerModule;
 exports.CompilerComponent = public_api_1.CompilerComponent;
 exports.LoadingIndicatorComponent = public_api_1.LoadingIndicatorComponent;
 exports.LoadingIndicatorModule = public_api_1.LoadingIndicatorModule;
+var compiler_service_1 = require("./lib/compiler/compiler.service");
+exports.ɵa = compiler_service_1.CompilerService;
 //# sourceMappingURL=index.js.map

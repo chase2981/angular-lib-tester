@@ -6,20 +6,27 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
+var http_1 = require("@angular/http");
 var compiler_component_1 = require("./compiler.component");
+var compiler_service_1 = require("./compiler.service");
 var CompilerModule = (function () {
     function CompilerModule() {
     }
     CompilerModule.decorators = [
         { type: core_1.NgModule, args: [{
                     imports: [
-                        common_1.CommonModule
+                        common_1.CommonModule,
+                        http_1.HttpModule,
                     ],
                     declarations: [
-                        compiler_component_1.CompilerComponent
+                        compiler_component_1.CompilerComponent,
                     ],
                     exports: [
-                        compiler_component_1.CompilerComponent
+                        compiler_component_1.CompilerComponent,
+                        http_1.HttpModule,
+                    ],
+                    providers: [
+                        compiler_service_1.CompilerService
                     ]
                 },] },
     ];
