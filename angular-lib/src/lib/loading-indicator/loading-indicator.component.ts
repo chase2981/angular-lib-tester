@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'rd-loading-indicator',
