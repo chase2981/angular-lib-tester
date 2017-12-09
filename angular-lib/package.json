@@ -37,6 +37,7 @@
     "@angular/http": "5.0.3",
     "@angular/platform-browser": "5.0.3",
     "@types/ckeditor": "0.0.45",
+    "@types/es6-shim": "0.31.35",
     "ckeditor": "4.7.3",
     "gulp": "3.9.1",
     "gulp-inline-ng2-template": "4.0.0",
