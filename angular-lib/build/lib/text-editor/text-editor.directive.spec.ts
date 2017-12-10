@@ -7,7 +7,7 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { TextEditorDirective } from './text-editor.directive';
+// import { TextEditorDirective } from './text-editor.directive';
 
 describe('Directive: TextEditor', () => {
   it('should create an instance', () => {
