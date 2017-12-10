@@ -14,6 +14,7 @@
     "test.ts"
   ],
   "include": [
+    "../angular-lib/index.ts",
     "**/*.spec.ts",
     "**/*.d.ts"
   ]
