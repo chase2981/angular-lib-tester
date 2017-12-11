@@ -10,34 +10,39 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "@angular/core", "@angular/common", "@angular/http", "./compiler.component", "./compiler.service"], factory);
+        define(["require", "exports", "@angular/core", "@angular/http", "./dynamic-compiler.module", "./template-compiler", "./dynamic-type.builder", "@angular/core", "@angular/platform-browser-dynamic"], factory);
     }
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var core_1 = require("@angular/core");
-    var common_1 = require("@angular/common");
     var http_1 = require("@angular/http");
-    var compiler_component_1 = require("./compiler.component");
-    var compiler_service_1 = require("./compiler.service");
+    var dynamic_compiler_module_1 = require("./dynamic-compiler.module");
+    var template_compiler_1 = require("./template-compiler");
+    var dynamic_type_builder_1 = require("./dynamic-type.builder");
+    var core_2 = require("@angular/core");
+    var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
+    function createCompiler(compilerFactory) {
+        return compilerFactory.createCompiler();
+    }
+    exports.createCompiler = createCompiler;
     var CompilerModule = (function () {
         function CompilerModule() {
         }
         CompilerModule = __decorate([
             core_1.NgModule({
                 imports: [
-                    common_1.CommonModule,
+                    dynamic_compiler_module_1.DynamicCompilerModule,
                     http_1.HttpModule,
                 ],
-                declarations: [
-                    compiler_component_1.CompilerComponent,
-                ],
-                exports: [
-                    compiler_component_1.CompilerComponent,
-                    http_1.HttpModule,
-                ],
+                declarations: [],
+                exports: [],
                 providers: [
-                    compiler_service_1.CompilerService
+                    { provide: core_2.COMPILER_OPTIONS, useValue: {}, multi: true },
+                    { provide: core_2.CompilerFactory, useClass: platform_browser_dynamic_1.JitCompilerFactory, deps: [core_2.COMPILER_OPTIONS] },
+                    { provide: core_2.Compiler, useFactory: createCompiler, deps: [core_2.CompilerFactory] },
+                    dynamic_type_builder_1.DynamicTypeBuilder,
+                    template_compiler_1.TemplateCompiler
                 ]
             })
         ], CompilerModule);
