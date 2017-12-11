@@ -1,5 +1,13 @@
-<div>
-    <span *ngIf="model?.firstName">{{model.firstName}}</span><span *ngIf="model?.lastName">&nbsp;{{model.lastName}}</span>
+<style>
+    #name {
+        font-weight: bold
+    }
+</style>
+
+
+<div id="name">
+    <span *ngIf="model?.firstName">{{model.firstName}}</span>
+    <span *ngIf="model?.lastName">&nbsp;{{model.lastName}}</span>
 </div>
 
 <h1>

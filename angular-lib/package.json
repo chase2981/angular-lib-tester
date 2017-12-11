@@ -44,7 +44,7 @@
     "typescript": "2.4.2",
     "zone.js": "0.8.18"
   },
-  "devDependencies": {
+  "optionalDependencies": {
     "@angular/common": "5.1.0",
     "@angular/compiler": "5.1.0",
     "@angular/compiler-cli": "5.1.0",

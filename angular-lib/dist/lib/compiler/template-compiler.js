@@ -37,9 +37,9 @@ var TemplateCompiler = (function () {
         return Observable_1.Observable.create(function (observer) {
             var /** @type {?} */ styles;
             _this.http.get(url).map(function (response) { return response.text(); }).subscribe(function (result) {
+                console.log('styles', [/<style.+>[\s\S]+<\/style>/g.exec(result), result.match(/<style.+>[\s\S]+<\/style>/g)]);
                 styles = result.match(/<style.+>[\s\S]+<\/style>/g);
                 result = result.replace(/<style.+>[\s\S]+<\/style>/g, '');
-                console.log('styles', [styles, /<style.+>[\s\S]+<\/style>/g.exec(result)]);
                 _this.typeBuilder.createComponentFactoryByTemplate(result, additionalImports).then(function (factory) {
                     // Target will instantiate and inject component (we'll keep reference to it)
                     // Target will instantiate and inject component (we'll keep reference to it)
