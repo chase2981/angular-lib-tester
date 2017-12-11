@@ -1,16 +1,17 @@
-(function (factory) {
-    if (typeof module === "object" && typeof module.exports === "object") {
-        var v = factory(require, exports);
-        if (v !== undefined) module.exports = v;
-    }
-    else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "./lib/index"], factory);
-    }
-})(function (require, exports) {
-    "use strict";
-    function __export(m) {
-        for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-    }
-    Object.defineProperty(exports, "__esModule", { value: true });
-    __export(require("./lib/index"));
-});
+"use strict";
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+var index_1 = require("./lib/index");
+exports.CompilerModule = index_1.CompilerModule;
+exports.CompiledResultModel = index_1.CompiledResultModel;
+exports.DynamicCompilerModule = index_1.DynamicCompilerModule;
+exports.DynamicTypeBuilder = index_1.DynamicTypeBuilder;
+exports.TemplateCompiler = index_1.TemplateCompiler;
+exports.LoadingIndicatorComponent = index_1.LoadingIndicatorComponent;
+exports.LoadingIndicatorModule = index_1.LoadingIndicatorModule;
+exports.TextEditorDirective = index_1.TextEditorDirective;
+exports.TextEditorModule = index_1.TextEditorModule;
+//# sourceMappingURL=public_api.js.map
