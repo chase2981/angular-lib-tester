@@ -4,13 +4,15 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "postinstall": "npm install ./angular-lib/",
+    "postupdate": "npm install ./angular-lib/",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "5.1.0",
     "@angular/common": "5.1.0",
