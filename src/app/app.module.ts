@@ -1,14 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { APP_BASE_HREF } from '@angular/common';
+import { CookieXSRFStrategy, HttpModule, Request, XSRFStrategy } from '@angular/http';
 import { LoadingIndicatorModule, CompilerModule, TextEditorModule } from 'angular-lib';
 
 import { AppComponent } from './app.component';
-import { CookieXSRFStrategy } from '../../angular-lib/node_modules/@angular/http/src/backends/xhr_backend';
-import { RequestOptions } from '../../angular-lib/node_modules/@angular/http/src/base_request_options';
-import { XSRFStrategy } from '../../angular-lib/node_modules/@angular/http/src/interfaces';
-import { APP_BASE_HREF } from '../../angular-lib/node_modules/@angular/common';
-
 
 @NgModule({
   declarations: [
@@ -22,14 +18,25 @@ import { APP_BASE_HREF } from '../../angular-lib/node_modules/@angular/common';
     TextEditorModule,
   ],
   providers: [
-    //{ provide: APP_BASE_HREF, useValue: '/' },
-    { provide: XSRFStrategy, useValue: cookieStrategy },
-    //{ provide: RequestOptions, useValue: {} }
+    // { provide: APP_BASE_HREF, useValue: '/' },
+    // { provide: XSRFStrategy, useValue: cookieStrategy },
+    // { provide: RequestOptions, useValue: {} }
 ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 
 export function cookieStrategy() {
-  return  new CookieXSRFStrategy('csrftoken', 'X-CSRFToken');
+  return new CustomCookieXSRFStrategy('csrftoken', 'X-CSRFToken');
+}
+
+export class CustomCookieXSRFStrategy implements XSRFStrategy {
+  private _cookieName;
+  private _headerName;
+  constructor(_cookieName?: string, _headerName?: string){
+
+  }
+  configureRequest(req: Request): void {
+    console.log('req', req);
+  }
 }
