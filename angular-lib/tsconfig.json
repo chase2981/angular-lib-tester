@@ -10,10 +10,6 @@
     "experimentalDecorators": true,
     "target": "es5",
     "skipLibCheck": false,
-    "paths": {
-      "@angular/*": ["/node_modules/@angular/*"],
-      "rxjs/*": ["/node_modules/rxjs/*"]
-    },
     "types": [
       "ckeditor"
     ],
