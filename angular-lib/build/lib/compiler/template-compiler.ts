@@ -26,10 +26,10 @@ export class TemplateCompiler implements Compiler {
             let styles: string[];
 
             this.http.get(url).map(response => response.text()).subscribe(result => {
-                console.log('styles', [/<style.+>[\s\S]+<\/style>/g.exec(result), result.match(/<style.+>[\s\S]+<\/style>/g)]);
+                console.log('styles', [/<style(.+)?>([\s\w\{\}\.\:\;]+)<\/style>/g.exec(result), result.match(/<style(.+)?>([\s\w\{\}\.\:\;]+)<\/style>/g)]);
 
-                styles = result.match(/<style.+>[\s\S]+<\/style>/g);
-                result = result.replace(/<style.+>[\s\S]+<\/style>/g, '');
+                styles = result.match(/<style(.+)?>([\s\w\{\}\.\:\;]+)<\/style>/g);
+                result = result.replace(/<style(.+)?>([\s\w\{\}\.\:\;]+)<\/style>/g, '');
 
                 this.typeBuilder.createComponentFactoryByTemplate(result, additionalImports).then((factory: ComponentFactory<DynamicComponent>) => {
                     // Target will instantiate and inject component (we'll keep reference to it)

@@ -4,11 +4,13 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "postinstall": "npm install ./angular-lib/",
-    "postupdate": "npm install ./angular-lib/",
+    "postinstall": "npm run build-lib && npm install ./angular-lib/",
+    "postupdate": "npm run build-lib && npm install ./angular-lib/",
     "start": "ng serve",
     "build": "ng build",
+    "build-lib": "./angular-lib/build.sh",
     "test": "ng test",
+    "test-lib": "./angular-lib/test.sh",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
