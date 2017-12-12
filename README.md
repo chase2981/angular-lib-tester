@@ -4,6 +4,22 @@ This project's main purpose is to provide a conventional angular app structure
 from which you can test the ./angular-lib is working as intended in a broader
 context, as you continue to make changes to the ./angular-lib.
 
+## getting started
+Run `npm i` to install the dependencies.
+Run `npm start` or `ng s` to serve the application using angular-cli.
+I also setup lite-server, so you can also run `npm run build` or `ng b`,
+followed by `npm run serve`, in order to serve without angular-cli.
+
+### building angular-lib
+First run `chmod 777 ./angular-lib/build.sh`, followed by `chmod 777 ./angular-lib/test.sh`, (or else `chmod +x ./angular-lib/test.sh`) to make the bash scripts executable
+Next run `npm run build-lib` in order to rebuild the angular-lib directories src files into dist files
+
+## testing angular-lib
+First run `chmod 777 ./angular-lib/build.sh`, followed by `chmod 777 ./angular-lib/test.sh`, (or else `chmod +x ./angular-lib/test.sh`) to make the bash scripts executable
+Next run `npm run test-lib` in order to test the angular-lib itself
+
+## @angular/cli
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
 
 ## development server
