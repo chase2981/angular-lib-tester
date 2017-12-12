@@ -1,22 +1,20 @@
 {
-  "name": "angular-lib-tester",
+  "name": "@turbonemesis/angular-lib-tester",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "postinstall": "npm run build-lib && npm install ./angular-lib/",
-    "postupdate": "npm run build-lib && npm install ./angular-lib/",
-    "start": "ng serve",
     "build": "ng build",
-    "build-lib": "./angular-lib/build.sh",
-    "test": "ng test",
-    "test-lib": "./angular-lib/test.sh",
+    "build-lib": "bash angular-lib/build.sh",
+    "e2e": "ng e2e",
+    "install-lib": "npm run build-lib && npm i angular-lib",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test",
+    "test-lib": "bash angular-lib/test.sh"
   },
   "private": false,
   "dependencies": {
-    "@angular/animations": "5.1.0",
     "@angular/common": "5.1.0",
     "@angular/compiler": "5.1.0",
     "@angular/core": "5.1.0",
@@ -25,7 +23,6 @@
     "@angular/platform-browser": "5.1.0",
     "@angular/platform-browser-dynamic": "5.1.0",
     "@angular/router": "5.1.0",
-    "angular-lib": "file:angular-lib",
     "ckeditor": "4.7.3",
     "core-js": "2.5.2",
     "rxjs": "5.5.5",
@@ -41,6 +38,8 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "4.0.1",
+    "gulp": "3.9.1",
+    "gulp-inline-ng2-template": "4.0.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -54,5 +53,8 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
+  },
+  "optionalDependencies": {
+    "@turbonemesis/angular-lib": "file:angular-lib"
   }
 }

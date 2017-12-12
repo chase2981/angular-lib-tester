@@ -1,6 +1,6 @@
 {
-  "name": "angular-lib",
-  "version": "0.0.0",
+  "name": "@turbonemesis/angular-lib",
+  "version": "0.0.0-beta.1",
   "description": "compiles templates when provided a path to a template file by first http.get()ing the template and then compiling it with the provided view model",
   "main": "dist/index.js",
   "scripts": {

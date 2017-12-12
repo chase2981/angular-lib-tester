@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { APP_BASE_HREF } from '@angular/common';
 import { CookieXSRFStrategy, HttpModule, Request, XSRFStrategy } from '@angular/http';
-import { LoadingIndicatorModule, CompilerModule, TextEditorModule } from 'angular-lib';
+import { LoadingIndicatorModule, CompilerModule, TextEditorModule } from '@turbonemesis/angular-lib';
 
 import { AppComponent } from './app.component';
 
