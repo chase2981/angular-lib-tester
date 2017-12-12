@@ -1,47 +1,30 @@
 # angular-lib-tester
 
-This project's main purpose is to provide a conventional angular app structure
-from which you can test the ./angular-lib is working as intended in a broader
-context, as you continue to make changes to the ./angular-lib.
+This project's purpose is to provide a convenient and quick angular app structure in which you can develop and test your next ./angular-lib 
 
-## getting started
-Run `npm i` to install the dependencies.
-Run `npm start` or `ng s` to serve the application using angular-cli.
-I also setup lite-server, so you can also run `npm run build` or `ng b`,
-followed by `npm run serve`, in order to serve without angular-cli.
+## Getting Started
+First things first, clone the repo: 
+In a brand new terminal, execute the following statement to clone the repository: 
+`git clone git@github.com:chase2981/angular-lib-tester.git`
 
-### building angular-lib
-First run `chmod 777 ./angular-lib/build.sh`, followed by `chmod 777 ./angular-lib/test.sh`, (or else `chmod +x ./angular-lib/test.sh`) to make the bash scripts executable
-Next run `npm run build-lib` in order to rebuild the angular-lib directories src files into dist files
+Next, install the dependencies: (Don't forget to `cd ./angular-lib-tester` first..)
+Run `npm i` or `yarn` to install the dependencies. You don't have to repeat this step within the ./angular-lib itself--because it is setup to use the peer dependencies installed in the invoking app instead (i.e. this app/the angular-lib-tester app)
 
-## testing angular-lib
-First run `chmod 777 ./angular-lib/build.sh`, followed by `chmod 777 ./angular-lib/test.sh`, (or else `chmod +x ./angular-lib/test.sh`) to make the bash scripts executable
-Next run `npm run test-lib` in order to test the angular-lib itself
+Finally, start the server!!
+Run `npm start` or `ng s` to serve the application using angular-cli server
 
-## @angular/cli
+Or else `npm run serve` in order to build and serve the app using lite-server instead; it should launch your default browser to the relevant location once it is ready. The app should automatically reload when you change any of the source files (http://localhost:3000)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
+## Additional Info
 
-## development server
+Build the ./angular-lib:
+Run `./angular-lib/build.sh` in order to rebuild the angular-lib directory's src files into a consumable library
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Test the ./angular-lib:
+Run `./angular-lib/test.sh` in order to run the tests for the angular-lib itself
 
-## code scaffolding
+Build the demo-app:
+Run `ng b` or `npm run build` to build the demo-app. The `npm run serve` command utilizes the build command in order to serve the demo-app content via lite-server.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Test the demo-app:
+Run `ng test` or `npm test` to test the demo-app. 
