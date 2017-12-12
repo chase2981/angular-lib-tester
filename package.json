@@ -4,8 +4,6 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "postinstall": "npm run build-lib && npm install ./angular-lib/",
-    "postupdate": "npm run build-lib && npm install ./angular-lib/",
     "start": "ng serve",
     "build": "ng build",
     "build-lib": "./angular-lib/build.sh",
@@ -25,7 +23,6 @@
     "@angular/platform-browser": "5.1.0",
     "@angular/platform-browser-dynamic": "5.1.0",
     "@angular/router": "5.1.0",
-    "angular-lib": "file:angular-lib",
     "ckeditor": "4.7.3",
     "core-js": "2.5.2",
     "rxjs": "5.5.5",
@@ -49,8 +46,6 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-phantomjs-launcher": "1.0.4",
-    "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
