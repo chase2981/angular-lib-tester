@@ -43,6 +43,6 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "index.js",
-    "flatModuleId": "angular-lib-tester"
+    "flatModuleId": "@turbonemesis/angular-lib-tests"
   }
 }

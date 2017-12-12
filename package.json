@@ -1,14 +1,14 @@
 {
-  "name": "angular-lib-tester",
+  "name": "@turbonemesis/angular-lib-tester",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-lib": "./angular-lib/build.sh",
+    "build-lib": "bash angular-lib/build.sh",
     "test": "ng test",
-    "test-lib": "./angular-lib/test.sh",
+    "test-lib": "bash angular-lib/test.sh",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
