@@ -4,14 +4,14 @@
   "license": "MIT",
   "scripts": {
     "build": "ng build",
-    "build-lib": "./angular-lib/build.sh",
+    "build-lib": "chmod 777 ./angular-lib/build.sh && ./angular-lib/build.sh",
     "e2e": "ng e2e",
     "install-lib": "npm run build-lib && npm i angular-lib",
     "lint": "ng lint",
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test",
-    "test-lib": "./angular-lib/test.sh"
+    "test-lib": "chmod 777 ./angular-lib/test.sh && ./angular-lib/test.sh"
   },
   "private": false,
   "dependencies": {
