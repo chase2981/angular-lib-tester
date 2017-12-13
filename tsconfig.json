@@ -9,11 +9,6 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "target": "es5",
-    /*
-    "paths": {
-      "angular-lib": ["./angular-lib/index.ts"]
-    },
-    */
     "types": [
       "ckeditor"
     ],
@@ -26,11 +21,13 @@
     ]
   },
   "files": [
-    "./angular-lib/index.ts",
     "./src/main.ts",
     "./src/polyfills.ts"
   ],
   "include": [
     "./src/typings.d.ts"
+  ],
+  "exclude": [
+    "node_modules/**"
   ]
 }
