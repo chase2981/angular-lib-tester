@@ -1,6 +1,8 @@
 # angular-lib-tester
 
-This project's purpose is to provide a convenient and quick angular app structure in which you can develop and test your next ./angular-lib 
+This project's purpose is to provide a convenient, quick, and easy-to-understand angular-lib structure from which you can begin to develop and test your own new ./angular-lib. 
+
+This project was built using @angular@5.1.0 and @angular/cli@1.6.0, both of which are strongly geared towards ahead-of-time compilation.
 
 ## Getting Started
 First things first, clone the repo: 
