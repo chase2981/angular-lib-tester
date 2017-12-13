@@ -11,7 +11,7 @@ NGC="node node_modules/.bin/ngc"
 rm -rf ./angular-lib/dist ./angular-lib/build
 
 # Run gulp inline-templates
-$GULP inline-templates --gulpfile ./angular-lib/gulpfile.js
+$GULP inline-templates --gulpfile ./angular-lib/.gulpfile.js
 
 # Run Typescript Compiler
 $NGC -p ./angular-lib/tsconfig.json

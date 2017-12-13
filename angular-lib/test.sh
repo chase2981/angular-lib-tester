@@ -8,7 +8,7 @@ TSC="node node_modules/.bin/tsc"
 rm -rf ./angular-lib/dist ./angular-lib/build
 
 # Run gulp inline-templates
-$GULP inline-templates --gulpfile ./angular-lib/gulpfile.js
+$GULP inline-templates --gulpfile ./angular-lib/.gulpfile.js
 
 # Run Angular Compiler
 $TSC -p ./angular-lib/tsconfig-spec.json
