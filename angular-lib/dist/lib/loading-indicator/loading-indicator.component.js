@@ -33,7 +33,7 @@ var LoadingIndicatorComponent = (function () {
         { type: core_1.Component, args: [{
                     selector: 'rd-loading-indicator',
                     template: "\n    <img [src]=\"src\" [height]=\"height\" [width]=\"width\" style=\"margin: auto !important;\" />\n  ",
-                    styles: ["\n    :host {\n        display: inline-block;\n    }\n  "]
+                    styles: ["\n    :host {\n        display: inline-block;\n        background-color: black;\n    }\n  "]
                 },] },
     ];
     /** @nocollapse */
