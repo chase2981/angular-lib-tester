@@ -25,6 +25,11 @@
   "files": [
     "./build/public_api.ts"
   ],
+  "include": [
+    "./build/lib/compiler/compiler.module.ts",
+    "./build/lib/loading-indicator/loading-indicator.module.ts",
+    "./build/lib/text-editor/text-editor.module.ts"
+  ],
   "exclude": [
     "node_modules/**",
     "**/*.spec.ts"
@@ -32,8 +37,6 @@
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
-    "skipTemplateCodegen": true,
-    "flatModuleOutFile": "index.js",
-    "flatModuleId": "@turbonemesis/angular-lib"
+    "skipTemplateCodegen": true
   }
 }
