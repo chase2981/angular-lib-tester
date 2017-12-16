@@ -3,6 +3,7 @@
   "version": "0.0.0-beta.1",
   "description": "compiles templates when provided a path to a template file by first http.get()ing the template and then compiling it with the provided view model",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "./build.sh",
     "test": "./test.sh"
@@ -40,6 +41,7 @@
     "karma-cli": "1.0.1",
     "karma-jasmine": "1.1.0",
     "karma-jasmine-html-reporter": "0.2.2",
+    "karma-phantomjs-launcher": "1.0.4",
     "rxjs": "5.5.5",
     "systemjs": "0.19.39",
     "typescript": "2.4.2",
@@ -68,6 +70,7 @@
     "karma-cli": "1.0.1",
     "karma-jasmine": "1.1.0",
     "karma-jasmine-html-reporter": "0.2.2",
+    "karma-phantomjs-launcher": "1.0.4",
     "rxjs": "5.5.5",
     "systemjs": "0.19.39",
     "typescript": "2.4.2",

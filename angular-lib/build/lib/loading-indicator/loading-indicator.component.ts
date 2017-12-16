@@ -8,6 +8,7 @@ import { Component, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
   styles: [`
     :host {
         display: inline-block;
+        background-color: black;
     }
   `]
 })

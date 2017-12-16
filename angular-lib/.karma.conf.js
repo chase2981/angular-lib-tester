@@ -6,7 +6,8 @@ module.exports = function(config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
-      require('karma-jasmine-html-reporter')
+      require('karma-jasmine-html-reporter'),
+      require('karma-phantomjs-launcher')
     ],
 
     // Proxied base paths for loading assets
@@ -59,7 +60,7 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome_1024x768'],
+    browsers: ['PhantomJS'], /* Chrome_1024x768 */
     singleRun: false
   });
 };
