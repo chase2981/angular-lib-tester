@@ -58,6 +58,6 @@
     "typescript": "~2.4.2"
   },
   "optionalDependencies": {
-    "@turbonemesis/angular-lib": "file:angular-lib"
+    "@turbonemesis/angular-lib": "*"
   }
 }
