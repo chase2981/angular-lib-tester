@@ -2,8 +2,10 @@
   "name": "@turbonemesis/angular-lib",
   "version": "0.0.0-beta.1",
   "description": "compiles templates when provided a path to a template file by first http.get()ing the template and then compiling it with the provided view model",
+  "repository": "https://github.com/chase2981/angular-lib-tester",
   "main": "dist/public_api.js",
   "typings": "dist/public_api.d.ts",
+  "private": false,
   "scripts": {
     "build": "./build.sh",
     "test": "./test.sh"
@@ -17,7 +19,6 @@
   ],
   "author": "turbonemesis <cwgibb@aggiemail.usu.edu> (http://turbonemesis.com)",
   "license": "MIT",
-  "private": false,
   "peerDependencies": {
     "@angular/common": ">=5.1.0",
     "@angular/compiler": ">=5.1.0",
