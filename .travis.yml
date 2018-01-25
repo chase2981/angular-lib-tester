@@ -6,7 +6,7 @@ cache:
 notifications:
   email: true
 node_js:
-  - "7.7.4"
+  - "9.3.0"
 # before_install:
 #   - export CHROME_BIN=chromium-browser
 # before_script:
@@ -15,12 +15,11 @@ node_js:
 #   - "sh -e /etc/init.d/xvfb start"
 #   - sleep 3 # give xvfb some time to start
 script:
-  - npm test
+  - npm run test-lib
 after_success:
-  - npm run build
-  - npm run semantic-release
+  - npm run build-lib
+#  - npm run semantic-release
 branches:
   only:
     - master
     - dev
-    - slim
