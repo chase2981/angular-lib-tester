@@ -1,4 +1,6 @@
-[![travis build](https://img.shields.io/travis/chase2981/angular-lib-tester.svg)](https://travis-ci.org/chase2981/angular-lib-tester) [![CircleCI](https://circleci.com/gh/chase2981/angular-lib-tester.svg?style=shield&circle-token=7f6c19e82f8464c0dc18797b6146767f66d49f90)](https://circleci.com/gh/chase2981/angular-lib-tester) [![David](https://img.shields.io/david/chase2981/angular-lib-tester.svg)](https://github.com/chase2981/angular-lib-tester)
+[![travis build](https://img.shields.io/travis/chase2981/angular-lib-tester.svg)](https://travis-ci.org/chase2981/angular-lib-tester)
+[![CircleCI](https://circleci.com/gh/chase2981/angular-lib-tester/tree/master.svg?style=shield)](https://circleci.com/gh/chase2981/angular-lib-tester/tree/master)
+[![David](https://img.shields.io/david/chase2981/angular-lib-tester.svg)](https://github.com/chase2981/angular-lib-tester)
 
 # angular-lib-tester
 
