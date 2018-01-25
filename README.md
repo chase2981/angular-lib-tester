@@ -1,14 +1,16 @@
+[![travis build](https://img.shields.io/travis/chase2981/angular-lib-tester.svg)](https://travis-ci.org/chase2981/angular-lib-tester) [![CircleCI](https://circleci.com/gh/chase2981/angular-lib-tester.svg?style=shield&circle-token=7f6c19e82f8464c0dc18797b6146767f66d49f90)](https://circleci.com/gh/chase2981/angular-lib-tester) [![David](https://img.shields.io/david/chase2981/angular-lib-tester.svg)](https://github.com/chase2981/angular-lib-tester)
+
 # angular-lib-tester
 
-This project's purpose is to provide a convenient, quick, and easy-to-understand angular-lib structure from which you can begin to develop and test your own new ./angular-lib. 
+This project's purpose is to provide a convenient, quick, and easy-to-understand angular-lib structure from which you can begin to develop and test your own new ./angular-lib.
 
 This project was built using @angular@5.1.0 and @angular/cli@1.6.0, both of which are strongly geared towards ahead-of-time compilation.
 
 
 
 ## Getting Started
-First things first, clone the repo: 
-In a new terminal, execute the following statement to clone the repo: 
+First things first, clone the repo:
+In a new terminal, execute the following statement to clone the repo:
 `git clone git@github.com:chase2981/angular-lib-tester.git`
 
 Next, install the dependencies: (Don't forget to `cd ./angular-lib-tester` first..)
@@ -63,5 +65,3 @@ Run `ng b` or `npm run build` to build the demo-app. The `npm run serve` command
 
 ### Test the Demo App
 Run `ng test` or `npm test` to test the demo-app
-
-

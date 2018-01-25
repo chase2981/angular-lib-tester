@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 9.3.0
+
+deployment:
+  dev:
+    branch: dev
+    commands:
+      - ./angular-lib/test.sh
+      # - ./deploy/dev/ci/deploy.sh
+
+  production:
+    branch: master
+    commands:
+      - ./angular-lib/test.sh
+      # - ./deploy/prod/ci/deploy.sh
