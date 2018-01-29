@@ -6,11 +6,11 @@ deployment:
   dev:
     branch: dev
     commands:
-      - ./angular-lib/test.sh
+      - npm test
       # - ./deploy/dev/ci/deploy.sh
 
   production:
     branch: master
     commands:
-      - ./angular-lib/test.sh
+      - npm test
       # - ./deploy/prod/ci/deploy.sh

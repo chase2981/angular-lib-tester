@@ -11,7 +11,7 @@
     "serve": "npm run build && lite-server -c=.bs-config.json",
     "ng": "ng",
     "start": "ng serve",
-    "test": "ng test --single-run",
+    "test": "ng test --browsers PhantomJS --single-run true",
     "test-lib": "bash angular-lib/test.sh",
     "prepush": "npm test && npm run build"
   },
