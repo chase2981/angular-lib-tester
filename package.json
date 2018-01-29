@@ -11,9 +11,9 @@
     "serve": "npm run build && lite-server -c=.bs-config.json",
     "ng": "ng",
     "start": "ng serve",
-    "test": "ng test",
+    "test": "karma start karma.conf.js --single-run true --auto-watch false --reporters progress",
     "test-lib": "bash angular-lib/test.sh",
-    "prepush": "karma start karma.conf.js --single-run true --auto-watch false --reporters progress && npm run build"
+    "prepush": "npm test && npm run build"
   },
   "private": false,
   "dependencies": {
