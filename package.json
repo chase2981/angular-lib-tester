@@ -10,9 +10,10 @@
     "lint": "ng lint",
     "serve": "npm run build && lite-server -c=.bs-config.json",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve", 
     "test": "ng test",
-    "test-lib": "bash angular-lib/test.sh"
+    "test-lib": "bash angular-lib/test.sh",
+    "prepush": "npm test && npm run build"
   },
   "private": false,
   "dependencies": {
