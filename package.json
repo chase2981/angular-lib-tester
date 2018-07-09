@@ -28,7 +28,7 @@
     "ckeditor": "4.7.3",
     "core-js": "2.5.2",
     "rxjs": "5.5.5",
-    "systemjs": "0.19.39",
+    "systemjs": "0.21.4",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
