@@ -23,7 +23,7 @@
     "@angular/forms": "5.1.0",
     "@angular/http": "5.1.0",
     "@angular/platform-browser": "5.1.0",
-    "@angular/platform-browser-dynamic": "5.1.0",
+    "@angular/platform-browser-dynamic": "6.0.7",
     "@angular/router": "5.1.0",
     "ckeditor": "4.7.3",
     "core-js": "2.5.2",
