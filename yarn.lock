@@ -1123,6 +1123,10 @@ circular-dependency-plugin@^4.2.1:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/circular-dependency-plugin/-/circular-dependency-plugin-4.4.0.tgz#f8a1a746a3f6c8e57f4dae9b54d991cd2a582f5d"
 
+ckeditor@4.11.2:
+  version "4.11.2"
+  resolved "https://registry.yarnpkg.com/ckeditor/-/ckeditor-4.11.2.tgz#90c1439de18afa0b7ee1993a3a463a2e84aa481e"
+
 ckeditor@4.7.3:
   version "4.7.3"
   resolved "https://registry.yarnpkg.com/ckeditor/-/ckeditor-4.7.3.tgz#b486fb9eb91af9532a0acfaea4a55374970254d5"
