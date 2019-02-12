@@ -210,6 +210,10 @@
   version "0.0.45"
   resolved "https://registry.yarnpkg.com/@types/ckeditor/-/ckeditor-0.0.45.tgz#8ece120d463ec2ba052b5346e1eec737c343ea72"
 
+"@types/ckeditor@4.9.6":
+  version "4.9.6"
+  resolved "https://registry.yarnpkg.com/@types/ckeditor/-/ckeditor-4.9.6.tgz#04fd78c6915c00c0b2d066156bbd61b457649922"
+
 "@types/jasmine@*":
   version "2.8.6"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.6.tgz#14445b6a1613cf4e05dd61c3c3256d0e95c0421e"
