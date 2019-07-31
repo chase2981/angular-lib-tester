@@ -7073,6 +7073,10 @@ systemjs@0.19.39:
   dependencies:
     when "^3.7.5"
 
+systemjs@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-5.0.0.tgz#8d8fb57c0ad32d73e34b7a7c0c63bd39b318008f"
+
 tapable@^0.2.7:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.8.tgz#99372a5c999bf2df160afc0d74bed4f47948cd22"
